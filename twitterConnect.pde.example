@@ -1,0 +1,13 @@
+void twitterConnect(){
+    ConfigurationBuilder cb = new ConfigurationBuilder();
+
+  cb.setOAuthConsumerKey(“consumerKey”);   
+  cb.setOAuthConsumerSecret(“ConsumerSecret”);   
+  cb.setOAuthAccessToken(“AccessToken”);   
+  cb.setOAuthAccessTokenSecret(“TokenSecret”);
+    TwitterFactory tf = new TwitterFactory(cb.build());
+    twitter = tf.getInstance();
+
+}
+
+
